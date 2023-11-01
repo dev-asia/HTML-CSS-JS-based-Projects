@@ -1,0 +1,130 @@
+*{
+    font-family:Verdana, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #333;
+    overflow-x: hidden;
+    margin: 0;
+   
+  
+} 
+/* main content */
+.main{
+    background-color: white;
+    padding: 50px;
+    transform-origin: top left;/*point of rotation*/
+    transition: transform 0.5s linear;
+}
+.main.rotate{
+   transform: rotate(-20deg); 
+}
+
+/* part one  Circle-Contanier*/
+.circle-contanier{
+    position: fixed;
+    left: -100px;
+    top: -100px;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position:relative;
+    background-color: #ff7979;
+    color: white;
+    transition: transform 0.5s linear;
+}
+.circle.rotate{
+    transform: rotate(-70deg);   
+}
+button{
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:100px;
+   background-color: transparent;
+   border: 0;
+   font-size :26px;
+   color: white;
+}
+button i{
+    font-size: 28px;
+}
+
+#open{
+left: 60%;
+
+}
+#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+
+/* part two Content*/
+.content{
+    max-width: 1000px;
+    margin: 50px 0;
+}
+@media(min-width:1000px){
+    .content{
+        padding: 0 50px;
+    }
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+h1{
+    margin: 0;
+}
+span{
+    font-size: 13px;
+    color:#555;
+    font-style: italic;
+}
+
+/*  part three side bar*/
+.side-bar{
+    position: fixed;
+    bottom: 50px;
+    left: -300px;
+    transition:  0.5s linear;
+    transition-delay: 0.1s;
+}
+ul{
+    margin: 10px 0px;
+    padding-left:30px ;
+}
+li{
+    list-style: none;
+    color: white;
+}
+ul li {
+    margin: 40px 0;
+}
+ul li + li{
+    margin: 40px 15px;
+}
+ul li + li + li{
+    margin: 40px 30px;
+}
+i{
+    margin-right: 10px;
+    font-size: 19px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+a:hover{
+    color: #ff7979;
+    font-weight: bold;
+    /* transform: translateY(50px); */
+}

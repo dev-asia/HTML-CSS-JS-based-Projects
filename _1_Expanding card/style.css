@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.contanier{
+    display: flex;
+    width:90vw;
+}
+.box{
+    height:80vh;
+    margin: 10px;
+    border-radius: 3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    transition: all 700ms ease-in;
+}
+ h3{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 24px;
+    opacity: 0;
+    margin: 0;
+}
+.click{
+    flex: 5;
+}
+
+/* This styling is applying another box when those box also contain click class
+ And we added this class using JavaScript*/
+.box.click h3{    
+    opacity: 1;
+    transition: all 700ms ease-in;;
+}
+
+
+@media(max-width:400px){
+   .box:nth-of-type(4),  /*four number box*/  
+   .box:nth-of-type(5){ /*five number  box*/
+    display: none;
+   }
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+body{
+  text-align: center;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius:20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+.container{
+   display: flex;
+  justify-content: center;
+   
+}   
+
+.one{
+    background-color:#b95980 ;
+}
+.two{
+    background-color:#f99b45 ;
+}
+.three{
+    background-color: #63aac0;
+}
+.four{
+    background-color:#819ff9;
+}
+.flash{
+    background-color: white;
+}
+.userclick{
+    background-color: red;
+}
+.back{
+background-color: gainsboro;
+}
+.out{
+height: 100px;
+width: 100%;
+background-color: black;
+color: white;
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 50%;
+z-index: 3;
+}

@@ -1,0 +1,15 @@
+.acitvity{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dv{
+    margin-top: 20px;
+    border: 1px solid black;
+    height: 100px;
+    width: 40%;
+    text-align: center;
+   
+}

@@ -1,0 +1,89 @@
+body{
+    background-color: rgba(30,30,30);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+   box-sizing: border-box;/*it include padding and border into hight or width */
+   overflow: hidden;
+}
+/*By defult= box-sizing:content-box /it dos't inculde  padding and border into hight or width */
+
+.container{
+    text-align: center;
+}
+
+.steps{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 16px 0;
+    position: relative;
+    width: 350px;
+}
+.steps::before{    /* Add content before starting the slector element */
+    content: ""; /* And then apply styling this content by using css without effective the html structur*/
+    height: 4px;
+    width: 100%;
+    background-color:#383838;
+    position: absolute;
+    top: 48%;
+    z-index: -1;
+}
+.progress{
+    position:absolute;
+    background-color:#00aaff;
+    z-index: 1;
+    transition:0.4s ease ;
+    height: 4px;
+    top: 48%;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #1f1f1f;
+    border: 3px solid #383838;
+    transition: 0.4s ease;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
+    
+}
+.circle.active{
+border-color: #00aaff;
+
+}
+button{
+    padding: 8px 30px;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor:pointer;
+    position: relative;
+}
+.Prev{
+    background-color: #00aaff;
+}
+.Next{
+    background-color: #00aaff;
+}
+/* button:enabled{
+    background-color: #00aaff;
+    cursor: pointer;
+} */
+button:disabled{
+    background-color: #383838;
+    cursor: not-allowed;
+}
+
+
+
+button:active{
+    transform: scale(0.98);
+}
