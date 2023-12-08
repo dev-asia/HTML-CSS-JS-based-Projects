@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500&family=Roboto&family=Space+Grotesk&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.container .box{
+    background-image: url(ps.jpg);
+    background-position: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    flex: 1;overflow: hidden;
+    transition: all 0.9s ease-in-out;  
+}
+.container .box + .box{
+    background-image: url(xbox.jpg);
+    opacity: 1.2;
+    /* width: 100%; */
+}
+
+.content::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(87, 84, 236, 0.7);
+}
+.content2::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(43, 43, 43, 0.8);
+}
+h1{
+    width: 400px;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    opacity: 1;
+    left: 23%;
+    top: 25%;  
+}
+a{
+    position: absolute;
+    height: 70px;
+    width: 230px;
+    left: 32%;
+    top: 40%;
+    text-decoration: none;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* what happen when screen size is 800px */
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    a{
+        height: 50px;
+        width: 180px;
+    }
+}
+
+/* what happen when we  hover */
+.content a:hover{
+    background-color:rgb(87, 84, 236);
+    border: none;
+}
+.content2 a:hover{
+    background-color:green;
+    border: none;
+}
+/* what happen when class add unsing JS */
+.left.show{
+   flex: 3;
+}
+.right.show{
+    flex: 3;
+ 
+}
+
+
+
+/* we can apply same functionalty using only CSS */
+/* .left:hover{
+    flex: 3;
+}
+.right:hover{
+    flex: 3;
+} */

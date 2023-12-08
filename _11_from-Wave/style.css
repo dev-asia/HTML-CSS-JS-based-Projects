@@ -1,0 +1,82 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500&family=Roboto:wght@400;500;700;900&family=Space+Grotesk&display=swap');
+*{
+   box-sizing: border-box;
+   font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;background-color: rgba(43, 165, 226, 0.632)
+}
+.container{
+    background-color: rgba(0, 0,0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bx{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+.bx input{
+    
+    padding: 15px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+
+}
+
+label{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    transition:all 0.9s ease;
+
+
+}
+label.active{
+    background-color: red;
+    top: -10px;
+  
+}
+button{
+    width: 100%;
+    padding: 17px 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: lightblue;
+}
+p{
+    margin-top: 30px;
+}
+input:focus{
+    outline: none;
+    
+}
+input:valid {
+    outline: 0;
+    border-bottom-color:lightblue;
+  }
+button:active{
+   transform: scale(0.99);
+}
+a{
+    text-decoration: none;
+    color:lightblue;
+}

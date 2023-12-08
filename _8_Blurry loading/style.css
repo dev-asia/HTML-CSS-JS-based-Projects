@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(man.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0.;
+}
+.box{
+
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+}
